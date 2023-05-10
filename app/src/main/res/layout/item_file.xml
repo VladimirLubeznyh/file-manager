@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_100"
+    android:layout_marginHorizontal="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/background_rounded_corners_10">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivIconFile"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_unknown_file" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivModified"
+        android:layout_marginStart="@dimen/dp_10"
+        android:src="@drawable/ic_baseline_create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivIconFile"
+        app:layout_constraintTop_toBottomOf="@id/tvFileDate" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvFileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivIconFile"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvFileDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivIconFile"
+        app:layout_constraintTop_toBottomOf="@id/tvFileName"
+        tools:text="01.01.2010" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvFileSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="26G" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

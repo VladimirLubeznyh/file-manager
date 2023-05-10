@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">File manager</string>
+    <string name="size">size</string>
+    <string name="alphabetically">alphabetically</string>
+    <string name="creation_time">creation time</string>
+    <string name="extension">extension</string>
+    <string name="empty">empty</string>
+    <string name="failed">Failed</string>
+    <string name="update">update</string>
+    <string name="number_G">%1$d G</string>
+    <string name="number_MB">%1$d MB</string>
+    <string name="number_KB">%1$d KB</string>
+</resources>

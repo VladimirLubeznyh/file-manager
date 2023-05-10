@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/sizeMenu"
+            android:title="@string/size" />
+        <item
+            android:id="@+id/alphabeticallyMenu"
+            android:title="@string/alphabetically"
+            />
+        <item
+            android:id="@+id/creationTimeMenu"
+            android:title="@string/creation_time" />
+        <item
+            android:id="@+id/extensionMenu"
+            android:title="@string/extension" />
+</menu>
